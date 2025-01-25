@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Social Media Profiles</title>
+</head>
+<body>
+    <h1>Open Social Media Profiles</h1>
+    <ul>
+        <li><a href="#" onclick="openFacebookProfile()">Open Facebook Profile</a></li>
+        <li><a href="#" onclick="openInstagramProfile()">Open Instagram Profile</a></li>
+        <li><a href="#" onclick="openTwitterProfile()">Open Twitter Profile</a></li>
+    </ul>
+
+    <script>
+        function openFacebookProfile() {
+            const facebookProfileId = "pailaagcafe"; // Replace with actual Facebook profile ID
+            window.location.href = `fb://profile/${facebookProfileId}`;
+        }
+
+        function openInstagramProfile() {
+            const instagramUsername = "your_instagram_username"; // Replace with actual Instagram username
+            window.location.href = `instagram://user?username=${instagramUsername}`;
+        }
+
+        function openTwitterProfile() {
+            const twitterUsername = "your_twitter_username"; // Replace with actual Twitter username
+            window.location.href = `twitter://user?screen_name=${twitterUsername}`;
+        }
+    </script>
+</body>
+</html>
